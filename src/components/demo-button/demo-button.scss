@@ -1,0 +1,77 @@
+:host {
+  display: block;
+}
+
+@mixin button-styles {
+  padding: 24px 32px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@mixin button-size($font-size, $padding) {
+  font-size: $font-size;
+  padding: $padding;
+}
+
+
+.btn__primary {
+  border: 1px solid var(--color-secondary-pure);
+  color: var(--neutral-color-high-pure);
+  background: var(--color-secondary-pure);
+  @include button-styles;
+
+  &:hover {
+    background-color: var(--color-secondary-dark);;
+  }
+
+  &:focus {
+    border-color: var(--hc-info-pink-inactive);
+  }
+}
+
+.btn__text {
+  border: none;
+  color: var(--color-secondary-pure);
+  background: transparent;
+  @include button-styles;
+
+  &:hover {
+    background-color: var(--neutral-color-high-light);;
+  }
+
+  &:focus {
+    border-color: var(--hc-info-pink-inactive);
+  }
+}
+
+.btn__secondary {
+  border: 1px solid var(--color-secondary-pure);
+  background: var(--neutral-color-high-pure);
+  color: var(--color-secondary-pure);
+  @include button-styles;
+
+  &:hover {
+    background-color: var(--neutral-color-high-light);;
+  }
+
+  &:focus {
+    border-color: var(--hc-info-pink-inactive);
+  }
+}
+
+.btn__x-large {
+  @include button-size(24px, 16px 32px);
+}
+
+.btn__large {
+  @include button-size(20px, 12px 24px);
+}
+
+.btn__medium {
+  @include button-size(16px, 8px 16px);
+}
+
+.btn__small {
+  @include button-size(14px, 4px 8px);
+}

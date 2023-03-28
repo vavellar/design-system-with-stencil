@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <link rel='stylesheet' href='/build/demo-design-system.css'>
+    <script type="module" src="/build/demo-design-system.esm.js"></script>
+    <script nomodule src="/build/demo-design-system.js"></script>
+
+    <style>
+      .column {
+        display: flex;
+        flex-direction: row;
+      }
+      .column > * {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class='container'>
+      <div class='column'>
+        <h3>Primary</h3>
+        <demo-button variant="primary" size='x-large'>
+          X-large
+        </demo-button>
+        <demo-button variant="primary" size='large'>
+          Large
+        </demo-button>
+        <demo-button variant="primary" size='medium'>
+          Medium
+        </demo-button>
+        <demo-button variant="primary" size='small'>
+          Small
+        </demo-button>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='column'>
+        <h3>Secondary</h3>
+        <demo-button variant="secondary" size='x-large'>
+          X-large
+        </demo-button>
+        <demo-button variant="secondary" size='large'>
+          Large
+        </demo-button>
+        <demo-button variant="secondary" size='medium'>
+          Medium
+        </demo-button>
+        <demo-button variant="secondary" size='small'>
+          Small
+        </demo-button>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='column'>
+        <h3>Text</h3>
+        <demo-button variant="text" size='x-large'>
+          X-large
+        </demo-button>
+        <demo-button variant="text" size='large'>
+          Large
+        </demo-button>
+        <demo-button variant="text" size='medium'>
+          Medium
+        </demo-button>
+        <demo-button variant="text" size='small'>
+          Small
+        </demo-button>
+      </div>
+    </div>
+  </body>
+</html>
